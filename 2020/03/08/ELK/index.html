@@ -79,18 +79,21 @@
 
 
 
-<meta name="description" content="dsddasdsadsa dsad">
+<meta name="description" content="ELK一、ELK概述ELK是一组开源软件的简称，其包括Elasticsearch、Logstash 和 Kibana。ELK最近几年发展迅速，已经成为目前最流行的集中式日志解决方案。  Elasticsearch: 能对大容量的数据进行接近实时的存储，搜索和分析操作。 本项目中主要通过Elasticsearch存储所有获取的日志。 Logstash： 数据收集引擎，它支持动态的的从各种数据源获取数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="123">
-<meta property="og:url" content="http://yoursite.com/2020/03/08/123/index.html">
+<meta property="og:title" content="ELK">
+<meta property="og:url" content="http://yoursite.com/2020/03/08/ELK/index.html">
 <meta property="og:site_name" content="DONG">
-<meta property="og:description" content="dsddasdsadsa dsad">
+<meta property="og:description" content="ELK一、ELK概述ELK是一组开源软件的简称，其包括Elasticsearch、Logstash 和 Kibana。ELK最近几年发展迅速，已经成为目前最流行的集中式日志解决方案。  Elasticsearch: 能对大容量的数据进行接近实时的存储，搜索和分析操作。 本项目中主要通过Elasticsearch存储所有获取的日志。 Logstash： 数据收集引擎，它支持动态的的从各种数据源获取数">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-03-08T04:35:26.000Z">
-<meta property="article:modified_time" content="2020-03-08T04:36:03.474Z">
+<meta property="og:image" content="http://dongvision.oss-cn-hongkong.aliyuncs.com/MD/pqyu4.png">
+<meta property="og:image" content="http://dongvision.oss-cn-hongkong.aliyuncs.com/MD/usu3e.png">
+<meta property="article:published_time" content="2020-03-08T05:43:23.939Z">
+<meta property="article:modified_time" content="2020-03-08T05:43:24.092Z">
 <meta property="article:author" content="DONG">
 <meta property="article:tag" content="LIFE">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://dongvision.oss-cn-hongkong.aliyuncs.com/MD/pqyu4.png">
 
 
 
@@ -120,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/03/08/123/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/03/08/ELK/"/>
 
 
 
 
 
-  <title>123 | DONG</title>
+  <title>ELK | DONG</title>
   
 
 
@@ -233,7 +236,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/08/123/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/08/ELK/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DONG">
@@ -250,7 +253,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">123</h1>
+          <h1 class="post-title" itemprop="name headline">ELK</h1>
         
 
         <div class="post-meta">
@@ -262,7 +265,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-08T12:35:26+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-08T13:43:23+08:00">
                 2020-03-08
               </time>
             
@@ -300,8 +303,20 @@
       
 
       
-        <h3 id="dsd"><a href="#dsd" class="headerlink" title="dsd"></a>dsd</h3><p>dasdsadsa</p>
-<p>dsad</p>
+        <h1 id="ELK"><a href="#ELK" class="headerlink" title="ELK"></a>ELK</h1><h2 id="一、ELK概述"><a href="#一、ELK概述" class="headerlink" title="一、ELK概述"></a>一、ELK概述</h2><p>ELK是一组开源软件的简称，其包括Elasticsearch、Logstash 和 <a href="https://www.centos.bz/tag/kibana/" target="_blank" rel="noopener">Kibana</a>。ELK最近几年发展迅速，已经成为目前最流行的集中式日志解决方案。</p>
+<ul>
+<li>Elasticsearch: 能对大容量的数据进行接近实时的存储，搜索和分析操作。 本项目中主要通过Elasticsearch存储所有获取的日志。</li>
+<li>Logstash： 数据收集引擎，它支持动态的的从各种数据源获取数据，并对数据进行过滤，分析，丰富，统一格式等操作，然后存储到用户指定的位置。</li>
+<li>Kibana： 数据分析与可视化平台，对Elasticsearch存储的数据进行可视化分析，通过表格的形式展现出来。</li>
+<li>Filebeat: 轻量级的开源日志文件数据搜集器。通常在需要采集数据的客户端安装Filebeat,并指定目录与日志格式,Filebeat就能快速收集数据，并发送给logstash进行解析，或是直接发给Elasticsearch存储。</li>
+<li><a href="https://www.centos.bz/tag/redis/" target="_blank" rel="noopener">Redis</a>：NoSQL数据库(key-value)，也数据轻型消息队列，不仅可以对高并发日志进行削峰还可以对整个架构进行解耦</li>
+</ul>
+<p><strong>传统ELK的经典框架</strong></p>
+<p><img src="http://dongvision.oss-cn-hongkong.aliyuncs.com/MD/pqyu4.png" alt="img"></p>
+<p>单一的架构，logstash作为日志搜集器，从数据源采集数据，并对数据进行过滤，格式化处理，然后交由Elasticsearch存储，kibana对日志进行可视化处理。</p>
+<p><strong>新型ELK框架</strong></p>
+<p><img src="http://dongvision.oss-cn-hongkong.aliyuncs.com/MD/usu3e.png" alt="img"></p>
+<p>Filebeats是一种轻量级的日志搜集器，其不占用系统资源，自出现之后，迅速更新了原有的elk架构。Filebeats将收集到的数据发送给Logstash解析过滤，在Filebeats与Logstash传输数据的过程中，为了安全性，可以通过ssl认证来加强安全性。之后将其发送到Elasticsearch存储，并由kibana可视化分析</p>
 
       
     </div>
@@ -326,8 +341,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/03/08/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2020/03/08/dsadsad/" rel="next" title="dsadsad">
+                <i class="fa fa-chevron-left"></i> dsadsad
               </a>
             
           </div>
@@ -335,10 +350,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/03/08/dsadsad/" rel="prev" title="dsadsad">
-                dsadsad <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -452,7 +463,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#dsd"><span class="nav-number">1.</span> <span class="nav-text">dsd</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ELK"><span class="nav-number">1.</span> <span class="nav-text">ELK</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、ELK概述"><span class="nav-number">1.1.</span> <span class="nav-text">一、ELK概述</span></a></li></ol></li></ol></div>
             
 
           </div>

@@ -230,6 +230,259 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/08/ELK/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DONG">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DONG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/03/08/ELK/" itemprop="url">ELK</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-08T13:43:23+08:00">
+                2020-03-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="ELK"><a href="#ELK" class="headerlink" title="ELK"></a>ELK</h1><h2 id="一、ELK概述"><a href="#一、ELK概述" class="headerlink" title="一、ELK概述"></a>一、ELK概述</h2><p>ELK是一组开源软件的简称，其包括Elasticsearch、Logstash 和 <a href="https://www.centos.bz/tag/kibana/" target="_blank" rel="noopener">Kibana</a>。ELK最近几年发展迅速，已经成为目前最流行的集中式日志解决方案。</p>
+<ul>
+<li>Elasticsearch: 能对大容量的数据进行接近实时的存储，搜索和分析操作。 本项目中主要通过Elasticsearch存储所有获取的日志。</li>
+<li>Logstash： 数据收集引擎，它支持动态的的从各种数据源获取数据，并对数据进行过滤，分析，丰富，统一格式等操作，然后存储到用户指定的位置。</li>
+<li>Kibana： 数据分析与可视化平台，对Elasticsearch存储的数据进行可视化分析，通过表格的形式展现出来。</li>
+<li>Filebeat: 轻量级的开源日志文件数据搜集器。通常在需要采集数据的客户端安装Filebeat,并指定目录与日志格式,Filebeat就能快速收集数据，并发送给logstash进行解析，或是直接发给Elasticsearch存储。</li>
+<li><a href="https://www.centos.bz/tag/redis/" target="_blank" rel="noopener">Redis</a>：NoSQL数据库(key-value)，也数据轻型消息队列，不仅可以对高并发日志进行削峰还可以对整个架构进行解耦</li>
+</ul>
+<p><strong>传统ELK的经典框架</strong></p>
+<p><img src="http://dongvision.oss-cn-hongkong.aliyuncs.com/MD/pqyu4.png" alt="img"></p>
+<p>单一的架构，logstash作为日志搜集器，从数据源采集数据，并对数据进行过滤，格式化处理，然后交由Elasticsearch存储，kibana对日志进行可视化处理。</p>
+<p><strong>新型ELK框架</strong></p>
+<p><img src="http://dongvision.oss-cn-hongkong.aliyuncs.com/MD/usu3e.png" alt="img"></p>
+<p>Filebeats是一种轻量级的日志搜集器，其不占用系统资源，自出现之后，迅速更新了原有的elk架构。Filebeats将收集到的数据发送给Logstash解析过滤，在Filebeats与Logstash传输数据的过程中，为了安全性，可以通过ssl认证来加强安全性。之后将其发送到Elasticsearch存储，并由kibana可视化分析</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/08/dsadsad/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DONG">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DONG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/03/08/dsadsad/" itemprop="url">dsadsad</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-08T13:38:53+08:00">
+                2020-03-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>idasdasd</p>
+<h2 id="dsad"><a href="#dsad" class="headerlink" title="dsad"></a>dsad</h2>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/08/123/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -516,7 +769,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
